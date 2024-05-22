@@ -19,7 +19,8 @@ module.exports = function (request, options) {
     const fields = {};
     const filePromises = [];
 
-    request.on('close', cleanup);
+    // Commenting the below line to fix the async-busboy freeze issue mentioned in https://github.com/m4nuC/async-busboy/issues/56
+    // request.on('close', cleanup);
 
     bb.on('field', onField.bind(null, fields))
       .on('file', customOnFile || onFile.bind(null, filePromises))
