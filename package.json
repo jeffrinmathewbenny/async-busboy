@@ -1,11 +1,11 @@
 {
-  "name": "async-busboy",
+  "name": "pw-async-busboy",
   "version": "1.0.1",
-  "description": "Promise based multipart form parser",
+  "description": "Promise based multipart form parser - With Issue Fix #49 of async-busboy",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/m4nuC/async-busboy"
+    "url": "https://github.com/jeffrinmathewbenny/async-busboy"
   },
   "scripts": {
     "test": "NODE_ENV=test mocha specs.js --harmony --reporter spec --bail",
